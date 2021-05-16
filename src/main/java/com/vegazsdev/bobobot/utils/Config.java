@@ -35,12 +35,12 @@ public class Config {
         try {
             FileTools.createFolder("configs");
             Properties saveProps = new Properties();
-            saveProps.setProperty("bot-token", "put your telegram bot token here");
-            saveProps.setProperty("bot-username", "put your bot user name");
-            saveProps.setProperty("bot-master", "put your telegram user id here");
-            saveProps.setProperty("requestChat", "put your main chat id for request here");
-            saveProps.setProperty("publicChannel", "put id or username of channel which will be used to send GSI, ex: trebleexperience");
-            saveProps.setProperty("privateChat", "put your private (adm) chat id for request here");
+            saveProps.setProperty("bot-token", "1798785128:AAFyyd_GD6H2odG2T_Un5T-OcsdJgMlrcBQ");
+            saveProps.setProperty("bot-username", "PriiiyoGSIs_Bot");
+            saveProps.setProperty("bot-master", "1032152179");
+            saveProps.setProperty("requestChat", "-1001212338973");
+            saveProps.setProperty("publicChannel", "PriiiyoGSI");
+            saveProps.setProperty("privateChat", "-1001401549638");
             fileOutputStream = new FileOutputStream("configs/configs.prop");
             saveProps.store(fileOutputStream, null);
         } catch (Exception e) {
