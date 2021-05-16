@@ -45,7 +45,7 @@ public class ErfanGSIs extends Command {
     private String infoGSI = "";
 
     public ErfanGSIs() {
-        super("jurl2gsi", "Can port gsi");
+        super("url2gsi", "Can port gsi");
     }
 
     private static String[] listFilesForFolder(final File folder) {
@@ -504,13 +504,14 @@ public class ErfanGSIs extends Command {
                  */
                 sendMessage.setText("<b>Requested " + gsiCmdObj.getGsi() + " GSI</b>"
                         + "\n<b>From</b> " + getModelOfOutput()
-                        + "\n<b>Built by</b> <a href=\"" + "tg://user?id=" + builderID + "\">" + builder + "</a>"
+                        + "\n<b>Ported by</b> <a href=\"" + "tg://user?id=" + builderID + "\">" + builder + "</a>"
                         + "\n\n<b>Information</b>\n<code>" + descGSI
                         + "</code>\n\n<b>Credits</b>" + "\n"
                         + "<a href=\"https://github.com/Erfanoabdi\">Erfan Abdi</a>" + " | "
-                        + "<a href=\"https://github.com/TrebleExperience/Bot3\">Bo³+t</a>" + "\n\n"
-                        + "<b>Treble Experience</b>" + "\n"
-                        + "<a href=\"https://t.me/TrebleExperience\">Channel</a> | <a href=\"https://t.me/TrebleExperience_chat\">Chat</a> | <a href=\"https://github.com/TrebleExperience\">GitHub</a>"
+                        + "<a href=\"https://github.com/VegaBobo/Bot3\">Bo³+t</a>" + " | "
+                        + "<a href=\"https://github.com/Velosh\">Velosh</a>" + "\n\n"
+                        + "<b>Priiiyo GSIs</b>" + "\n"
+                        + "<a href=\"https://t.me/PriiiyoGSI\">Channel</a> | <a href=\"https://t.me/PriiiyoGSIs\">Group</a> | <a href=\"https://github.com/smpriiiyo\">GitHub</a> | <a href=\"https://t.me/PriiiyoBOTs\">BOTs Project</a>"
                 );
                 sendMessage.setChatId(Objects.requireNonNull(SourceForgeSetup.getSfConf("bot-announcement-id")));
                 idGSI = bot.sendMessageAsyncBase(sendMessage, update);
